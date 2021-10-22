@@ -1,0 +1,4 @@
+homepage: "https://stape.io/"
+versions:
+  - sha: cbe90637a0914b26c7cfaf72ac78dd4447e0a809
+    changeNotes: Initial release.
