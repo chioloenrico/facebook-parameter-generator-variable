@@ -47,6 +47,14 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "name",
         "displayValue": "content_name \u0027 \u0027"
+      },
+      {
+        "value": "numitems",
+        "displayValue": "num_items"
+      },
+      {
+        "value": "value",
+        "displayValue": "value"
       }
     ],
     "simpleValueType": true
@@ -91,6 +99,8 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 let content_name = '';
 let content_ids = [];
 let contents = [];
+let num_items = 0;
+let value = 0;
 
 let arr = data.orderItems;
 let task = data.task;
@@ -119,7 +129,7 @@ if (arr && arr.length) {
             contents.push({
                 'id': arr[i][keyId],
                 'quantity': arr[i][keyQt],
-                'price': arr[i][keyPr]
+                'item_price': arr[i][keyPr]
             });
         }
     
@@ -133,6 +143,23 @@ if (arr && arr.length) {
         }
     
         return content_ids;
+    }
+  
+    if (task === 'numitems') {
+        for (let i = 0; i < arr.length; i++) {
+            num_items = num_items + arr[i][keyQt];
+        }
+    
+        return num_items;
+    }
+
+
+    if (task === 'value') {
+        for (let i = 0; i < arr.length; i++) {
+            value = value + arr[i][keyQt] * arr[i][keyPr];
+        }
+    
+        return value;
     }
 }
 

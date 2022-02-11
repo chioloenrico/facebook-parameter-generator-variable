@@ -1,4 +1,6 @@
 homepage: "https://stape.io/"
 versions:
+  - sha: eef195fea14a7cb8f269ee9e2b223b540cbc264a
+    changeNotes: Add value, num_items parameters to output.
   - sha: cbe90637a0914b26c7cfaf72ac78dd4447e0a809
     changeNotes: Initial release.
