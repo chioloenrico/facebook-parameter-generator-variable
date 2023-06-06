@@ -1,6 +1,7 @@
 # Facebook Parameter Generator Variable for Google Tag Manager Web Container
 
-TBD
+Not Used anymore.
+We keep it for archive.
 
 ## Open Source
 
