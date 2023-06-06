@@ -1,7 +1,8 @@
 # Facebook Parameter Generator Variable for Google Tag Manager Web Container
 
-Not Used anymore.
-We keep it for archive.
+Not Used anymore. 
+
+We keep it for the archive.
 
 ## Open Source
 
