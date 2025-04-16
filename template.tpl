@@ -147,7 +147,7 @@ if (arr && arr.length) {
   
     if (task === 'numitems') {
         for (let i = 0; i < arr.length; i++) {
-            num_items = num_items + arr[i][keyQt];
+            num_items = parseInt(num_items) + parseInt(arr[i][keyQt]);
         }
     
         return num_items;
